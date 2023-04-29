@@ -77,7 +77,7 @@ pipeline {
          stage('pass buildnumber to another pipeline') {
             steps {
                 
-                build job: 'deploy-jenkins-maven-helm1', parameters: [string(name: 'build_number', value: "${build_number}")]
+                build job: 'deploy-jenkins-maven-helm-1', parameters: [string(name: 'build_number', value: "${build_number}")]
             }
         }    
 
