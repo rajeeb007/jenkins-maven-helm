@@ -26,7 +26,7 @@ pipeline {
 
             steps {
 
-                sh 'docker build -t rajeeb007/jenkins:1.${build_number} .'
+                sh 'docker build -t rajeeb007/jenkins:${build_number} .'
                
             }
 
