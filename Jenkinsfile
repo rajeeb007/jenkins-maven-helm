@@ -54,7 +54,7 @@ pipeline {
 
                 
                 // sh "sed -i 's|1.0|1.${build_number}|g' jenkins-maven-helm/values.yaml"
-                sh "sed -i 's|version: 1.16.0|1.${build_number}|g' jenkins-maven-helm/Chart.yaml"
+                sh "sed -i 's|version: 0.1.0|${build_number}|g' jenkins-maven-helm/Chart.yaml"
 
             }
         }
