@@ -53,7 +53,7 @@ pipeline {
             steps {
 
                 
-                sh "sed -i 's|1.0|1.${build_number}|g' jenkins-maven/values.yaml"
+                sh "sed -i 's|1.0|1.${build_number}|g' jenkins-maven-helm/values.yaml"
 
             }
         }
