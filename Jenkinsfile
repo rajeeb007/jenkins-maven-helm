@@ -74,7 +74,7 @@ pipeline {
                         sh "aws ecr get-login-password | helm registry login  --username AWS -p \$(aws ecr get-login-password --region ap-south-1)  170771122394.dkr.ecr.ap-south-1.amazonaws.com"
                         // sh "helm push jenkins-maven-helm-0.1.0.tgz oci://170771122394.dkr.ecr.ap-south-1.amazonaws.com"
                         // sh "helm push jenkins-maven-helm-0.1.0.tgz oci://170771122394.dkr.ecr.ap-south-1.amazonaws.com:${build_number}"
-                        sh "helm push jenkins-maven-helm-1.${build_number}.tgz oci://170771122394.dkr.ecr.ap-south-1.amazonaws.com/jenkins-maven-helm:${BUILD_NUMBER}"
+                        sh "helm push jenkins-maven-helm-1.${build_number}.tgz oci://170771122394.dkr.ecr.ap-south-1.amazonaws.com"
 
                     }
                 }
